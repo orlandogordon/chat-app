@@ -1,4 +1,3 @@
-import React from "react";
 import { ChatBubbleLeftRightIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { ChatHeaderProps } from "react-chat-engine-advanced";
 

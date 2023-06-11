@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   XMarkIcon,
   PaperClipIcon,
@@ -51,7 +51,7 @@ const MessageFormUI = ({
         </div>
         <div className="message-form-icons">
           <Dropzone
-            acceptedFiles=".jpg,.jpeg,.png"
+            //acceptedFiles=".jpg,.jpeg,.png"
             multiple={false}
             noClick={true}
             onDrop={(acceptedFiles) => {
