@@ -5,17 +5,18 @@ import {
   ChatHeaderProps,
   MessageFormProps,
 } from "react-chat-engine-advanced";
-import Header from "@/components/customHeader";
-import StandardMessageForm from "@/components/customMessageForm/StandardMessageForm";
-import Ai from "@/components/customMessageForm/Ai";
+import Header from "../customHeader";
+import StandardMessageForm from "../customMessageForm/StandardMessageForm";
+import Ai from "../customMessageForm/Ai";
 
 type ChatProps = {
   user: any;
   secret: any;
 };
+
 const Chat = ({ user, secret }: ChatProps) => {
   const chatProps = useMultiChatLogic(
-    import.meta.env.VITE_PROJECT_ID,
+    process.env.REACT_APP_PROJECT_ID,
     user,
     secret
   );

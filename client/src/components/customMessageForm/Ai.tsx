@@ -1,6 +1,6 @@
 import { useState } from "react";
 import MessageFormUI from "./MessageFormUI";
-import { usePostAiTextMutation } from "@/state/api";
+import { usePostAiTextMutation } from "../../state/api";
 
 type AiProps = {
   props: any;
